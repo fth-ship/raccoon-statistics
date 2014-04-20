@@ -50,4 +50,11 @@ describe('Statistic', function () {
 
     assert.deepEqual(actual.map(statistic.range), expected);
   });
+
+  it('variance', function () {
+    var actual = statistic.variance([1, 2, 3, 8, 7]);
+    var expected = 2.79; 
+
+    assert.equal(actual, expected);
+  });
 });
